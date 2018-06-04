@@ -3,4 +3,10 @@
     <string name="settings">Настройки</string>
     <string name="search">Поиск</string>
     <string name="exit">Выход</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Main fragment</string>
+    <string name="title_google">Google</string>
+    <string name="title_yandex">Yandex</string>
+    <string name="title_bing">Bing</string>
 </resources>
