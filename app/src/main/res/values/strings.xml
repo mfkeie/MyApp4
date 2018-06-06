@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">MyApp4</string>
-    <string name="settings">Настройки</string>
-    <string name="search">Поиск</string>
-    <string name="exit">Выход</string>
+    <string name="settings_ru">Настройки</string>
+    <string name="search_ru">Поиск</string>
+    <string name="exit_ru">Выход</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello Main fragment</string>
     <string name="title_google">Google</string>
     <string name="title_yandex">Yandex</string>
     <string name="title_bing">Bing</string>
+    <string name="settings_en">Settings</string>
+    <string name="serarch_en">Search</string>
 </resources>

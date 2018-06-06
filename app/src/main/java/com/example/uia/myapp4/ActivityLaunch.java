@@ -38,13 +38,16 @@ public class ActivityLaunch extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.actionSettings:
                 showMessage(item.toString());
-                switchFragment("settings");
+                switchFragment(getString(R.string.settings_en));
                 break;
             case R.id.actionSearch:
                 showMessage(item.toString());
+                switchFragment(getString(R.string.serarch_en));
                 break;
             case R.id.actionExit:
                 showMessage(item.toString());
+                finish();
+                System.exit(0);
                 break;
             default:
                 break;
@@ -61,11 +64,18 @@ public class ActivityLaunch extends AppCompatActivity {
         fragment = getSupportFragmentManager().findFragmentByTag(name);
         if(fragment == null) {
             switch (name) {
-                case "settings":
+                case "Settings":
                     fragment = new FragmentSettings();
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.fragment_container, fragment, name)
                             .addToBackStack(FragmentSettings.class.getName())
+                            .commit();
+                    break;
+                case "Search":
+                    fragment = new FragmentSearch();
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragment_container, fragment, name)
+                            .addToBackStack(FragmentSearch.class.getName())
                             .commit();
                     break;
                 default: break;
